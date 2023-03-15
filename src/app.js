@@ -20,6 +20,8 @@ function guidGenerator() {
   return 100000 + Math.floor(Math.random() * 900000);
 }
 
+console.log(process.env.PAYSERA_PROJECT_ID);
+
 const paysera = new Paysera({
   projectid: process.env.PAYSERA_PROJECT_ID,
   sign_password: process.env.PAYSERA_PASSWORD,
