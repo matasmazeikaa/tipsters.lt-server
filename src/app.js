@@ -29,7 +29,7 @@ const paysera = new Paysera({
   test: 1,
 });
 
-app.post("/pay", (req, res) => {
+app.post("/tipsters/pay", (req, res) => {
   const { amount } = req.body;
 
   res.json({
@@ -41,11 +41,11 @@ app.post("/pay", (req, res) => {
   });
 });
 
-app.get("/ok", (req, res) => {
+app.get("/tipsters/ok", (req, res) => {
   res.json("OK");
 });
 
-app.use("/api/v1", api);
+app.use("/tipsters", api);
 
 app.use(middlewares.notFound);
 app.use(middlewares.errorHandler);
