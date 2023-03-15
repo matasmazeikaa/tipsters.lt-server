@@ -27,7 +27,7 @@ const paysera = new Paysera({
   sign_password: process.env.PAYSERA_PASSWORD,
   accepturl: "https://tipsters.lt/mokejimas-pavyko",
   cancelurl: "https://tipsters.lt/mokejimas-nepavyko",
-  callbackurl: "http://mycallback.url",
+  callbackurl: "http://45.9.190.55/tipsters/ok",
   test: 1,
 });
 
