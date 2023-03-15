@@ -41,6 +41,10 @@ app.post("/pay", (req, res) => {
   });
 });
 
+app.get("/ok", (req, res) => {
+  res.json("OK");
+});
+
 app.use("/api/v1", api);
 
 app.use(middlewares.notFound);
